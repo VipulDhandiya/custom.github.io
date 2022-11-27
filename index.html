@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex wrapper d-none d-lg-block">
+        <div class="sidebar bg-color-1">
+            <div class="text-center logo-wrapper p-4">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="logo-img" alt="logo-img">
+                </a>
+            </div>
+            <ul class="navbar-nav mb-2 pe-3 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fab fa-wpforms"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Forms</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fas fa-border-all"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Tables</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="top-bar d-flex align-items-center default-shadow">
+                <div class="d-flex">
+                    <a class="toggle-btn-wrapper cursor-pointer d-flex justify-content-center
+                    align-items-center rounded-circle bg-default text-white" id="toggler">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <form>
+                        <div class="ms-4 search-wrapper position-relative">
+                            <input class="form-control shadow-none me-2" type="text" placeholder="Search"
+                                aria-label="Search">
+                            <button class="position-absolute fs-18 bg-transparent border-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="ms-auto">
+                    <ul class="navbar-nav flex-row dropdown-wrapper">
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="notification" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="icon-wrapper justify-content-center align-items-center fs-22"><i
+                                        class="far fa-bell"></i></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="notification">
+                                <li><a class="dropdown-item" href="#">
+                                        <h6>Profile updated</h6>
+                                        <small class="">15 minutes ago</small>
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <h6>New user added</h6>
+                                        <small class="">15 minutes ago</small>
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <h6>Password changed</h6>
+                                        <small class="">15 minutes ago</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex align-items-center dropdown-toggle text-dark" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="icon-wrapper justify-content-center align-items-center fs-22 me-1"><i
+                                        class="far fa-user-circle"></i></span>
+                                <span>
+                                    John Doe
+                                    <i class="fas fa-chevron-down fs-12 ms-2"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="far fa-user me-2"></i>
+                                        My Profile
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-cog me-2"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-power-off me-2"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-content p-4">
+                hello
+            </div>
+        </div>
+    </div>
+    <div class="d-block d-lg-none responsive-layout">
+        <nav class="py-1 px-2 d-flex align-items-center default-shadow">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" class="img-fluid" alt="logo-img">
+            </div>
+            <ul class="navbar-nav flex-row align-items-center dropdown-wrapper ms-auto">
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="notification" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-wrapper justify-content-center align-items-center fs-22"><i
+                                class="far fa-bell"></i></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notification">
+                        <li><a class="dropdown-item" href="#">
+                                <h6>Profile updated</h6>
+                                <small class="">15 minutes ago</small>
+                            </a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <h6>New user added</h6>
+                                <small class="">15 minutes ago</small>
+                            </a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <h6>Password changed</h6>
+                                <small class="">15 minutes ago</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="toggle-btn-wrapper cursor-pointer d-flex justify-content-center
+                    align-items-center rounded-circle bg-default text-white" id="resptoggler">
+                <i class="fas fa-bars"></i>
+            </a>    
+                </li>
+        </nav>
+        <div class="resp-sidebar bg-color-1 position-sticky">
+            <ul class="navbar-nav mb-2 py-4 pe-3 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mb-2 active" aria-current="page" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-2" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fab fa-wpforms"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Forms</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-2" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fas fa-border-all"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Tables</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-2" aria-current="page" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="far fa-user"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">My Profile</span>
+                    </a>
+                    <a class="nav-link mb-2" aria-current="page" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fas fa-cog"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Settings</span>
+                    </a>
+                    <a class="nav-link mb-2" aria-current="page" href="#">
+                        <div>
+                            <span class="sidebar-icon-wrapper label-black bg-white me-3
+                            d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fas fa-power-off"></i>
+                            </span>
+                        </div>
+                        <span class="list-item">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#toggler").click(function () {
+            $(".wrapper").toggleClass("toggle");
+        });
+    });
+    $(document).ready(function () {
+        $("#resptoggler").click(function () {
+            $(".responsive-layout").toggleClass("resptoggle");
+        });
+    });
+</script>
+
+</html>

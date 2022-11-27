@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import 'base.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.sidebar {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    border: 1px solid;
+    transition: 0.3s all ease-in-out;
+}
+.logo-img {
+    width: 80%;
+    height: 70px;
+    object-fit: cover;
+}
+.sidebar ul li a, .resp-sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 40px !important;
+    margin-bottom: 18px;
+    border-radius: 0px 50px 50px 0px;
+    color: #fff;
+    border-left: 3px solid transparent;
+}
+.sidebar ul li a:hover, .resp-sidebar ul li a:hover {
+    background-color: var(--default);
+    border-color: var(--white);
+    color: var(--white) !important;
+}
+.sidebar ul li .active, .resp-sidebar ul li .active {
+    background-color: var(--default);
+    border-color: var(--white);
+}
+.sidebar-icon-wrapper {
+    width: 40px;
+    height: 40px;
+}
+.content {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+    height: 100vh;
+    border: 1px solid;
+    transition: 0.3s all ease-in-out;
+}
+.toggle .sidebar {
+    width: 70px;
+    transition: 0.3s all ease-in-out;
+}
+.toggle .sidebar ul {
+    padding-right: 0px !important;
+}
+.toggle .sidebar ul li a{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 7px !important;
+    border-radius: 0px;
+}
+.toggle .sidebar ul li a:hover .list-item {
+    display: block;
+    position: absolute;
+    left: 68px;
+    padding: 12px 20px !important;
+    border-radius: 0px 25px 25px 0px;
+    background-color: blue;
+}
+.toggle .sidebar-icon-wrapper {
+    width: 32px;
+    height: 32px;
+    margin-right: 0px !important;
+}
+.toggle .sidebar .list-item {
+    display: none;
+}
+.toggle .content {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    transition: 0.3s all ease-in-out;
+}
+.toggle .sidebar .logo-wrapper {
+    padding: 14px 7px !important;
+    margin-bottom: 10px !important;
+}
+.toggle .sidebar .logo-wrapper img {
+    width: 52px;
+    height: 30px;
+    object-fit: cover;
+}
+.toggle-btn-wrapper {
+    width: 36px;
+    height: 36px;
+    border: 1px solid;
+}
+.top-bar {
+    padding: 10px 16px;
+}
+.search-wrapper button {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.dropdown-wrapper .dropdown .dropdown-toggle .icon-wrapper {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+}
+.dropdown-wrapper .dropdown .dropdown-toggle::after {
+    display: none;
+}
+.dropdown-wrapper .dropdown .dropdown-menu {
+    inset: unset !important;
+    transform: unset !important;
+    right: 0px !important   ;
+}
+
+/* responsive layout */
+
+.responsive-layout .logo-wrapper img {
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+}
+.resp-sidebar {
+    width: 280px;
+    height: calc(100vh - 78px);
+    overflow-y: auto;
+    transition: 0.3s all ease-in-out;
+}
+/* .resp-sidebar .navbar-nav {
+    height: 71.5vh;
+} */
+.resptoggle .resp-sidebar{
+    width: 0px;
+}
